@@ -1,0 +1,70 @@
+        body {
+            font-family: Arial, sans-serif;
+            background: #020024;
+background: radial-gradient(circle, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 0%, rgba(0, 212, 255, 1) 100%);
+        }
+        .navbar {
+            background-color: #1e1e1f;
+        }
+        .navbar-brand {
+            color: gold !important;
+            font-weight: bold;
+        }
+         .nav-link {
+            color: gray !important;
+            font-weight: bold;
+        }
+        .navbar-brand:hover, .nav-link:hover {
+            color: white !important;
+        }
+        .carousel-item img {
+            max-height: 500px;
+            object-fit: cover;
+            width: 100%;
+        }
+        .title {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 2rem;
+            font-weight: bold;
+            color: #FFC72C;
+        }
+        .section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .section h2 {
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+            color: #1e1e1f;
+            font-weight: 800;
+        }
+        .section p {
+            font-size: 1rem;
+            color: black;
+            font-weight: 700;
+        }
+        .footer {
+            background-color: #1e1e1f;
+            color: gray;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .footer a {
+            color: gray;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .footer a:hover {
+            color: white;
+        }
+        .btn-custom {
+            background-color: #1e1e1f;
+            border: 1px solid gray;
+            color: gray;
+            transition: all 0.3s ease;
+        }
+        .btn-custom:hover {
+            background-color: gray;
+            color: #1e1e1f;
+        }

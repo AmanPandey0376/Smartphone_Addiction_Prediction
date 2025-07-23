@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smartphone Addiction Prediction</title>
+    <script>
+        function predictAddiction() {
+            const usageHours = document.getElementById("usageHours").value;
+            fetch('/predict', {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify({usage_hours: usageHours})
+            })
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById("result").innerText = "Prediction: " + data.prediction;
+            })
+            .catch(error => console.error('Error:', error));
+        }
+    </script>
+</head>
+<body>
+    <h2>Smartphone Addiction Prediction</h2>
+    <label for="usageHours">Enter Daily Smartphone Usage (hours):</label>
+    <input type="number" id="usageHours" name="usageHours" step="0.1">
+    <button onclick="predictAddiction()">Predict</button>
+    <p id="result"></p>
+</body>
+</html>
